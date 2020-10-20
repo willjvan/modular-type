@@ -1,0 +1,22 @@
+<?xml version="1.0"?>
+<input>
+	<text>default</text>
+	<Columns>6</Columns>
+	<Letter_Spacing>50</Letter_Spacing>
+	<Line_Spacing>50</Line_Spacing>
+</input>
+<Format>
+	<text>default</text>
+	<Columns>12</Columns>
+	<Letter_Spacing>31</Letter_Spacing>
+	<Line_Spacing>31</Line_Spacing>
+	<Line_Variation>0.6</Line_Variation>
+	<Letter_Variation>0.65</Letter_Variation>
+	<Letter_Space>55</Letter_Space>
+	<Line_Space>46</Line_Space>
+</Format>
+<controls>
+	<Slider>
+		<val_0>6.61229</val_0>
+	</Slider>
+</controls>
