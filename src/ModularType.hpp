@@ -1,10 +1,3 @@
-//
-//  ModularType.hpp
-//  mySketch2
-//
-//  Created by William on 2020-10-15.
-//
-
 #ifndef ModularType_hpp
 #define ModularType_hpp
 
@@ -33,7 +26,7 @@ class ModularType {
         void initGui();
         void initParagraph();
     
-        // gui
+        // gui functions
         void onTextChange(std::string &text);
         void onColChange(int &col);
         void onLineChange(int &space);
@@ -42,9 +35,8 @@ class ModularType {
         void onLetterVariChange(float &vari);
         void onXAmpChange(float &amp);
         void onYAmpChange(float &amp);
-        void onXSinChange(bool &on);
-//        void onXWaveChange(float &amp);
-//        void onYWaveChange(float &amp);
+        void onXTypeChange(int &x);
+        void onYTypeChange(int &y);
     
         // global
         Paragraph paragraph;
@@ -52,13 +44,12 @@ class ModularType {
         Format format;
         ofTrueTypeFont  font;
     
-//        // gui
+        // gui
         ofxPanel gui;
         ofParameterGroup title, layout, xWave, yWave;
         ofParameter<string> textParameter;
-        ofParameter<int> letterSpace, lineSpace, columns;
+        ofParameter<int> letterSpace, lineSpace, columns, xType, yType;
         ofParameter<float> letterVariation, lineVariation, xAmp, yAmp;
-        ofParameter<bool> xSin;
 };
 
 #endif /* ModularType_hpp */

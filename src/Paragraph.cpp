@@ -52,6 +52,38 @@ void Paragraph::setYAmp(float &amp) {
     this->waves[1]->setAmplitude(amp);
 }
 
+void Paragraph::setXWave(waveType wave) {
+    float amp = waves[0]->getAmplitude();
+    switch (wave) {
+        case SIN:
+            waves[0] = shared_ptr<Waveform>(new SinWave(amp));
+            break;
+        case TRIANGLE:
+            waves[0] = shared_ptr<Waveform>(new TriangleWave(amp));
+            break;
+        case SQUARE:
+            break;
+        case SAWTOOTH:
+            break;
+    }
+}
+
+void Paragraph::setYWave(waveType wave) {
+    float amp = waves[1]->getAmplitude();
+    switch (wave) {
+        case SIN:
+            waves[1] = shared_ptr<Waveform>(new SinWave(amp));
+            break;
+        case TRIANGLE:
+            waves[1] = shared_ptr<Waveform>(new TriangleWave(amp));
+            break;
+        case SQUARE:
+            break;
+        case SAWTOOTH:
+            break;
+    }
+}
+
 void Paragraph::setText(string &text) {
     this->text = text;
     setupLines();

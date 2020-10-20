@@ -1,10 +1,3 @@
-//
-//  ModularType.cpp
-//  mySketch2
-//
-//  Created by William on 2020-10-15.
-//
-
 #include "ModularType.hpp"
 
 ModularType::ModularType() {
@@ -73,12 +66,16 @@ void ModularType::initGui() {
     // X Wave
     xAmp.addListener(this, &ModularType::onXAmpChange);
     xWave.add(xAmp.set("X Amp", 0, 0, 100));
-    xSin.addListener(this, &ModularType::onXSinChange);
-    xWave.add(xSin.set("Sin", true));
+    
+    xType.addListener(this, &ModularType::onXTypeChange);
+    xWave.add(xType.set("Wave Type", 0, 0, 3));
 
     // Y Wave
     yAmp.addListener(this, &ModularType::onYAmpChange);
     yWave.add(yAmp.set("Y Amp", 0, 0, 100));
+    yType.addListener(this, &ModularType::onYTypeChange);
+    yWave.add(yType.set("Wave Type", 0, 0, 3));
+
     
     // Format
     textParameter.addListener(this, &ModularType::onTextChange);
@@ -99,6 +96,7 @@ void ModularType::initGui() {
     lineVariation.addListener(this, &ModularType::onLineVariChange);
     layout.add(lineVariation.set("Line Vary", 0, 0, 10));
     
+    // add
     gui.setup(title);
     gui.add(layout);
     gui.add(xWave);
@@ -141,10 +139,32 @@ void ModularType::onYAmpChange(float &amp){
     paragraph.setYAmp(amp);
 }
 
-void ModularType::onXSinChange(bool &on) {
-    if (on) {
-        
+void ModularType::onXTypeChange(int &x){
+    switch(x) {
+        case 0:
+            paragraph.setXWave(Paragraph::SIN);
+            break;
+        case 1:
+            paragraph.setXWave(Paragraph::TRIANGLE);
+            break;
+        case 2:
+            break;
+        case 3:
+            break;
     }
 }
 
-
+void ModularType::onYTypeChange(int &x){
+    switch(x) {
+        case 0:
+            paragraph.setYWave(Paragraph::SIN);
+            break;
+        case 1:
+            paragraph.setYWave(Paragraph::TRIANGLE);
+            break;
+        case 2:
+            break;
+        case 3:
+            break;
+    }
+}

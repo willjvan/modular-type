@@ -12,5 +12,13 @@ float TriangleWave::getFX(float input) {
 }
 
 float TriangleWave::getDeriv(float input) {
+//    float fx = getFX(input)
+//    if (fx == 0) {
+//
+//    } else if (fx > 0){
+//
+//    } else {
+//
+//    }
     return 0;
 }

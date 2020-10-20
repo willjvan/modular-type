@@ -18,7 +18,8 @@ class Waveform {
         virtual float getFX(float input);
         virtual float getDeriv(float input);
         void setAmplitude(float amplitude);
-        
+        float getAmplitude();
+
     protected:
         int amp;
 };

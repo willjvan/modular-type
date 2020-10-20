@@ -1,10 +1,3 @@
-//
-//  Format.hpp
-//  mySketch2
-//
-//  Created by William on 2020-10-13.
-//
-
 #ifndef Format_hpp
 #define Format_hpp
 

@@ -28,3 +28,7 @@ float Waveform::getDeriv(float input) {
 void Waveform::setAmplitude(float amp) {
     this->amp = amp;
 }
+
+float Waveform::getAmplitude() {
+    return this->amp;
+}

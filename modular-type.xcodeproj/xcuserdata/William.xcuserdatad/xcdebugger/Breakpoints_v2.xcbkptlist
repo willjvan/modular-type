@@ -10,11 +10,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "src/ModularType.cpp"
-            timestampString = "624671123.810043"
+            timestampString = "624864447.4787689"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "118"
-            endingLineNumber = "118"
+            startingLineNumber = "116"
+            endingLineNumber = "116"
             landmarkName = "ModularType::onLetterChange(int &amp;space)"
             landmarkType = "7">
          </BreakpointContent>
