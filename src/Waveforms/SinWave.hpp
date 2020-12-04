@@ -1,10 +1,3 @@
-//
-//  SinWave.hpp
-//  mySketch2
-//
-//  Created by William on 2020-10-14.
-//
-
 #ifndef SinWave_hpp
 #define SinWave_hpp
 
@@ -21,4 +14,4 @@ class SinWave: public Waveform {
 };
 
 
-#endif /* SinWave_hpp */
+#endif 

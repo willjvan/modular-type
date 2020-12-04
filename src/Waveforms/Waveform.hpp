@@ -1,10 +1,3 @@
-//
-//  Waveform.hpp
-//  mySketch2
-//
-//  Created by William on 2020-10-13.
-//
-
 #ifndef Waveform_hpp
 #define Waveform_hpp
 
@@ -23,4 +16,4 @@ class Waveform {
     protected:
         int amp;
 };
-#endif /* Waveform_hpp */
+#endif

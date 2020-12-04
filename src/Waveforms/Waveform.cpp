@@ -16,12 +16,10 @@ Waveform::Waveform(float amp) {
 }
 
 float Waveform::getFX(float input) {
-    cout << "waveform fx" << endl;
     return 0;
 }
 
 float Waveform::getDeriv(float input) {
-    cout << "waveform fx" << endl;
     return 0;
 }
 

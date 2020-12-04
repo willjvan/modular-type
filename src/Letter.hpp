@@ -22,4 +22,4 @@ class Letter {
     
 };
 
-#endif /* Letter_hpp */
+#endif 

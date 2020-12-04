@@ -299,7 +299,6 @@
 			isa = PBXGroup;
 			children = (
 				BF684335998D10C6D67B977A /* SawtoothWave.cpp */,
-				681199CA027FB6F7A29FCDC2 /* SquareWave.hpp */,
 				0C4CE4DB0F8BEA99099AC187 /* Waveform.cpp */,
 				F17E2674D98548F51916E68D /* Waveform.hpp */,
 				DCCAFCD7511BE5A3ABEF70BA /* TriangleWave.cpp */,
@@ -308,6 +307,7 @@
 				D0E975A28800BE8D1CA70D9A /* SinWave.cpp */,
 				5612198AF6DBDF791376379E /* SawtoothWave.hpp */,
 				CE6BE1E0BA42D87840BA92F3 /* SquareWave.cpp */,
+				681199CA027FB6F7A29FCDC2 /* SquareWave.hpp */,
 			);
 			name = Waveforms;
 			sourceTree = "<group>";

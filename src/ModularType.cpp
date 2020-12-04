@@ -148,8 +148,10 @@ void ModularType::onXTypeChange(int &x){
             paragraph.setXWave(Paragraph::TRIANGLE);
             break;
         case 2:
+            paragraph.setXWave(Paragraph::SQUARE);
             break;
         case 3:
+            paragraph.setXWave(Paragraph::SAWTOOTH);
             break;
     }
 }
@@ -163,8 +165,10 @@ void ModularType::onYTypeChange(int &x){
             paragraph.setYWave(Paragraph::TRIANGLE);
             break;
         case 2:
+            paragraph.setYWave(Paragraph::SQUARE);
             break;
         case 3:
+            paragraph.setYWave(Paragraph::SAWTOOTH);
             break;
     }
 }

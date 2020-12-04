@@ -1,13 +1,16 @@
-//
-//  SquareWave.hpp
-//  mySketch2
-//
-//  Created by William on 2020-10-14.
-//
-
 #ifndef SquareWave_hpp
 #define SquareWave_hpp
 
 #include <stdio.h>
+#include "Waveform.hpp"
 
-#endif /* SquareWave_hpp */
+class SquareWave: public Waveform {
+    
+public:
+    SquareWave():Waveform() {}
+    SquareWave(float amp):Waveform(amp) {}
+    float getFX(float input);
+    float getDeriv(float input);
+};
+
+#endif 

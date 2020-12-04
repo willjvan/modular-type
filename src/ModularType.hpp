@@ -6,6 +6,8 @@
 #include "ofxGui.h"
 #include "Paragraph.hpp"
 #include "Format.hpp"
+#include "./Waveforms/SawtoothWave.cpp"
+#include "./Waveforms/SquareWave.hpp"
 #include "./Waveforms/SinWave.hpp"
 #include "./Waveforms/TriangleWave.hpp"
 #include "./Waveforms/Waveform.hpp"
@@ -52,4 +54,4 @@ class ModularType {
         ofParameter<float> letterVariation, lineVariation, xAmp, yAmp;
 };
 
-#endif /* ModularType_hpp */
+#endif 

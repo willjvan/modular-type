@@ -43,16 +43,17 @@ class Paragraph{
 
     
     private:
+        void setupLines();
+        void setWaveByIndex(waveType wave, int i);
+        vector<string> getStrings();
+        vector<unique_ptr<Line>> lines;
+    
         string text;
         float lineVari, lettVari;
         int width, height;
         Format format;
         vector<shared_ptr<Waveform>> waves;
-    
-        void setupLines();
-        vector<string> getStrings();
-        vector<unique_ptr<Line>> lines;
-        
+
 };
 
-#endif /* Paragraph_hpp */
+#endif 

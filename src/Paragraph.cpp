@@ -62,8 +62,10 @@ void Paragraph::setXWave(waveType wave) {
             waves[0] = shared_ptr<Waveform>(new TriangleWave(amp));
             break;
         case SQUARE:
+            waves[0] = shared_ptr<Waveform>(new SquareWave(amp));
             break;
         case SAWTOOTH:
+//            waves[0] = shared_ptr<Waveform>(new Sawto(amp));
             break;
     }
 }
@@ -80,6 +82,24 @@ void Paragraph::setYWave(waveType wave) {
         case SQUARE:
             break;
         case SAWTOOTH:
+            break;
+    }
+}
+
+void Paragraph::setWaveByIndex(waveType wave, int i) {
+    float amp = waves[i]->getAmplitude();
+    switch (wave) {
+        case SIN:
+            waves[i] = shared_ptr<Waveform>(new SinWave(amp));
+            break;
+        case TRIANGLE:
+            waves[i] = shared_ptr<Waveform>(new TriangleWave(amp));
+            break;
+        case SQUARE:
+            waves[i] = shared_ptr<Waveform>(new SquareWave(amp));
+            break;
+        case SAWTOOTH:
+            //waves[i] = shared_ptr<Waveform>(new SawtWave(amp));
             break;
     }
 }
