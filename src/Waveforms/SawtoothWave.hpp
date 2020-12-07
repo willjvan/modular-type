@@ -1,13 +1,15 @@
-//
-//  SawtoothWave.hpp
-//  mySketch2
-//
-//  Created by William on 2020-10-14.
-//
-
 #ifndef SawtoothWave_hpp
 #define SawtoothWave_hpp
 
-#include <stdio.h>
+#include "Waveform.hpp"
 
-#endif /* SawtoothWave_hpp */
+class SawtoothWave: public Waveform {
+    
+public:
+    SawtoothWave():Waveform() {}
+    SawtoothWave(float amp):Waveform(amp) {}
+    float getFX(float input);
+    float getDeriv(float input);
+};
+
+#endif

@@ -29,4 +29,4 @@ class Line {
         void setupLetters();
 };
 
-#endif /* Line_hpp */
+#endif 

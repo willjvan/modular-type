@@ -1,10 +1,3 @@
-//
-//  Paragraph.cpp
-//  mySketch2
-//
-//  Created by William on 2020-10-13.
-//
-
 #include "Paragraph.hpp"
 
 Paragraph::Paragraph() {
@@ -62,8 +55,10 @@ void Paragraph::setXWave(waveType wave) {
             waves[0] = shared_ptr<Waveform>(new TriangleWave(amp));
             break;
         case SQUARE:
+            waves[0] = shared_ptr<Waveform>(new SquareWave(amp));
             break;
         case SAWTOOTH:
+            waves[0] = shared_ptr<Waveform>(new SawtoothWave(amp));
             break;
     }
 }
@@ -78,8 +73,10 @@ void Paragraph::setYWave(waveType wave) {
             waves[1] = shared_ptr<Waveform>(new TriangleWave(amp));
             break;
         case SQUARE:
+            waves[1] = shared_ptr<Waveform>(new SquareWave(amp));
             break;
         case SAWTOOTH:
+            waves[1] = shared_ptr<Waveform>(new SawtoothWave(amp));
             break;
     }
 }

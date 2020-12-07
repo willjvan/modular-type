@@ -1,10 +1,3 @@
-//
-//  Waveform.cpp
-//  mySketch2
-//
-//  Created by William on 2020-10-13.
-//
-
 #include "Waveform.hpp"
 
 Waveform::Waveform() {

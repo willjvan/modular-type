@@ -21,4 +21,4 @@ class Format {
         ofTrueTypeFont font;
 };
 
-#endif /* Format_hpp */
+#endif 

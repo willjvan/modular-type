@@ -49,8 +49,7 @@ void ModularType::initParagraph() {
     waves.push_back(shared_ptr<Waveform>(new SinWave(5.0)));
     waves.push_back(shared_ptr<Waveform>(new SinWave(10.0)));
     waves.push_back(shared_ptr<Waveform>(new SinWave(0.0)));
-    cout <<waves[1]->getFX(.5)<<endl;
-    paragraph = Paragraph("hehehehehehehehehehehehehehehehehehehehehe", 0.0f, 0.0f, waves, format);
+    paragraph = Paragraph("MODULAR TYPE", 0.0f, 0.0f, waves, format);
 }
 
 void ModularType::initGui() {
@@ -79,7 +78,7 @@ void ModularType::initGui() {
     
     // Format
     textParameter.addListener(this, &ModularType::onTextChange);
-    layout.add(textParameter.set("text", "hehehehehehehehehehehehehehehehehehehehehe"));
+    layout.add(textParameter.set("text", "MODULAR TYPE"));
     
     columns.addListener(this, &ModularType::onColChange);
     layout.add(columns.set("Columns", 14, 1, 30));
@@ -148,8 +147,10 @@ void ModularType::onXTypeChange(int &x){
             paragraph.setXWave(Paragraph::TRIANGLE);
             break;
         case 2:
+            paragraph.setXWave(Paragraph::SQUARE);
             break;
         case 3:
+            paragraph.setYWave(Paragraph::SAWTOOTH);
             break;
     }
 }
@@ -163,8 +164,10 @@ void ModularType::onYTypeChange(int &x){
             paragraph.setYWave(Paragraph::TRIANGLE);
             break;
         case 2:
+            paragraph.setYWave(Paragraph::SQUARE);
             break;
         case 3:
+            paragraph.setYWave(Paragraph::SAWTOOTH);
             break;
     }
 }

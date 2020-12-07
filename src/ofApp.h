@@ -19,28 +19,5 @@ class ofApp : public ofBaseApp{
 		void draw();
 
     private:
-//        ofxPanel gui;
-//        ofxIntSlider colSlider;
-//        ofxIntSlider letterSlider;
-//        ofxIntSlider lineSlider;
-//        ofxFloatSlider letterVariSlider;
-//        ofxFloatSlider lineVariSlider;
-//
-//        ofParameterGroup parameters;
-//        ofParameter<std::string> textParameter;
-//        ofEventListener textParameterListener;
-    
           ModularType modularType;
-    
-//        void initGlobal();
-//        void initWindow();
-//        void initColors();
-//        void initGui();
-//    
-//        void onTextChange(std::string &text);
-//        void onColChange(int &col);
-//        void onLineChange(int &space);
-//        void onLetterChange(int &space);
-//        void onLineVariChange(float &vari);
-//        void onLetterVariChange(float &vari);
 };

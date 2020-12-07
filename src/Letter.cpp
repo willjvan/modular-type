@@ -21,11 +21,7 @@ void Letter::setRotate(glm::vec3 rotate) {
 }
 
 ofMesh Letter::getMesh() {
-//    ofMesh ret = mesh;
-//    for (int i = 0; i < ret.getNumVertices(); i++) {
-//        ret.setVertex(i, ret.getVertex(i) + offset + pos);
-//    }
-//    return ret;
+
 }
 
 

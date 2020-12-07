@@ -52,4 +52,4 @@ class ModularType {
         ofParameter<float> letterVariation, lineVariation, xAmp, yAmp;
 };
 
-#endif /* ModularType_hpp */
+#endif

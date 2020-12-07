@@ -21,7 +21,6 @@ class Paragraph{
         void update(float input);
         void draw();
     
-        // setters
         void setText(string &text);
         void setFormat(Format format);
         void setLineVariation(float &vari);
@@ -36,7 +35,6 @@ class Paragraph{
         void setXWave(waveType wave);
         void setYWave(waveType wave);
     
-        // getters
         int getWidth();
         int getHeight();
     
@@ -55,4 +53,4 @@ class Paragraph{
         
 };
 
-#endif /* Paragraph_hpp */
+#endif
