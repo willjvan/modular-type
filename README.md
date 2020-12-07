@@ -1,4 +1,3 @@
-# Modular Type
 ![](SinSin.gif)
 
 A tool for creating kinetic typography that explores procedural animation using waveforms.
